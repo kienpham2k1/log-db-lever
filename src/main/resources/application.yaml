@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: log-db-lever
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 123
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  h2:
+    console:
+      enabled: true  # Bật H2 console để kiểm tra dữ liệu
+      path: /h2-console  # URL truy cập H2 console (http://localhost:8080/h2-console)
